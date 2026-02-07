@@ -2,14 +2,16 @@
 
 import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars"
 import Darkmode from "@/components/darkmode"
-import MainBox from "@/components/mainBcx"
+import MainBox from "@/components/mainBox"
+
 
 
 export default function Home() {
+
   return (
-    <StarsBackground className="min-h-screen w-full flex items-center justify-center" starColor="cyan" background="radial-gradient( #0ea5e9 0%, #020617 100%)">
+    <StarsBackground className="relative h-screen w-full flex items-center justify-center" starColor="var(--stars-color)" background="var(--stars-bg)">
       <Darkmode/>
-      <MainBox/>
+      <MainBox background="var(--mainbox-color)" stripBackground="var(--mainbox-strip)" />
     </StarsBackground>
   )
 }

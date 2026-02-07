@@ -1,5 +1,5 @@
 'use client';
-
+/*https://animate-ui.com/docs/components/backgrounds/stars#usage - online compnent url*/
 import * as React from 'react';
 import {
   type HTMLMotionProps,
