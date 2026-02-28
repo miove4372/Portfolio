@@ -52,7 +52,7 @@
   --mainbox-strip: rgb(219, 219, 181);
   --mainbox-color: #f4f4eb;
   --stars-color: black;
-  --stars-bg: radial-gradient(ellipse at bottom, #d9d8c2 0%, #1b34a5 100%);
+  --stars-bg: radial-gradient(ellipse at bottom, #d1dbaf 0%, #7485d0 100%);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -91,7 +91,7 @@
   --mainbox-strip: #0c2c38;
   --mainbox-color: #265e75;
   --stars-color: white;
-  --stars-bg: radial-gradient(ellipse at bottom, #1a0343 0%, #141017 100%);
+  --stars-bg: radial-gradient(ellipse at bottom, #1e044a 0%, #141017 100%);
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);

@@ -3,6 +3,8 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useState } from "react";
+
 
 type MainBoxProps = React.ComponentProps<"div"> & {
   /** Background of the main box (supports CSS vars like "var(--mainbox-color)") */
@@ -21,6 +23,12 @@ export default function MainBox({
 }: MainBoxProps) {
   const stripBg = stripBackground ?? background;
 
+
+const [aboutOpen, setAboutOpen] = useState<boolean>(false)
+
+
+
+
   return (
     <div
       className={cn("h-6/10 w-3/5 z-10 border-2 border-white rounded-2xl flex flex-col overflow-scroll", className)} style={{ background }}
@@ -33,29 +41,52 @@ export default function MainBox({
         </header>
         <main className="flex flex-col flex-1 items-center m-10">
           <h1 className="text-7xl m-2">Hi! I am Mikael</h1>
-          <p className="text-2xl p-5">Student, new and weak</p>
+          <p className="text-2xl p-5">1st year student</p>
         </main>
         <footer className="m-2">
           <div>
               <div className="flex justify-around ml-5 mr-5">
-                {/* Lightmode icons */}
-                <Image src={"/info-circle-svgrepo-com.svg"} height={50} width={50} alt="info" className="block dark:hidden"/>
-                <Image src={"/folder-open-svgrepo-com (1).svg"} height={50} width={50} alt="folder" className="block dark:hidden"/>
-                <Image src={"/link-svgrepo-com.svg"} height={50} width={50} alt="link" className="block dark:hidden"/>
-                <Image src={"/mail-svgrepo-com.svg"} height={50} width={50} alt="mail" className="block dark:hidden"/>
-                
-                
-                {/* Darkmode icons */}
-                <Image src={"/info-circle-svgrepo-com (1).svg"} height={50} width={50} alt="info" className="hidden dark:block"/>
-                <Image src={"/folder-open-svgrepo-com.svg"} height={50} width={50} alt="folder" className="hidden dark:block"/>
-                <Image src={"/link-svgrepo-com (1).svg"} height={50} width={50} alt="link" className="hidden dark:block"/>
-                <Image src={"/mail-svgrepo-com (1).svg"} height={50} width={50} alt="mail" className="hidden dark:block"/>
-                </div>
+                <button onClick={()=>{setAboutOpen(true)}}>
+                  <Image src="/info-circle-svgrepo-com.svg" width={50} height={50} alt="info" className="block dark:hidden" />
+                  <Image src="/info-circle-svgrepo-com (1).svg" width={50} height={50} alt="info" className="hidden dark:block" />
+                </button>
+
+                <button>
+                  <Image src="/folder-open-svgrepo-com (1).svg" width={50} height={50} alt="folder" className="block dark:hidden" />
+                  <Image src="/folder-open-svgrepo-com.svg" width={50} height={50} alt="folder" className="hidden dark:block" />
+                </button>
+
+                <button>
+                  <Image src="/link-svgrepo-com.svg" width={50} height={50} alt="link" className="block dark:hidden" />
+                  <Image src="/link-svgrepo-com (1).svg" width={50} height={50} alt="link" className="hidden dark:block" />
+                </button>
+
+                <button>
+                  <Image src="/mail-svgrepo-com.svg" width={50} height={50} alt="mail" className="block dark:hidden" />
+                  <Image src="/mail-svgrepo-com (1).svg" width={50} height={50} alt="mail" className="hidden dark:block" />
+                </button>
+
+
+                {aboutOpen &&(
+                  <button className="text-5xl" onClick={()=>{setAboutOpen(false)}}>
+                  x
+                  </button>
+                )}
+              </div>
+
+              
+
+
+
+
+
+
+
               <div className="flex justify-around ml-5 mr-5 text-2xl">
-                <p >About</p>
-                <p>Work</p>
-                <p>Links</p>
-                <p>Mail</p>
+                <span >About</span>
+                <span>Work</span>
+                <span>Links</span>
+                <span>Mail</span>
               </div>
             </div>
         </footer>
