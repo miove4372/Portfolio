@@ -4,8 +4,9 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
-import PopUpWindow from "./popups/PopUpWindow";
-import About from "./popups/About";
+import PopUpWindow from "./popups/popUpWindow";
+import About from "./popups/about";
+
 
 
 type MainBoxProps = React.ComponentProps<"div"> & {
@@ -30,8 +31,6 @@ const [aboutOpen, setAboutOpen] = useState<boolean>(false)
 const [workOpen, setWorkOpen] = useState<boolean>(false)
 const [linksOpen, setLinksOpen] = useState<boolean>(false)
 const [mailOpen, setMailOpen] = useState<boolean>(false)
-
-
 
 
   return (
