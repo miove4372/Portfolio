@@ -1,8 +1,8 @@
 "use client"
 
 import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars"
-import Darkmode from "@/components/DarkMode"
-import MainBox from "@/components/MainBox"
+import Darkmode from "@/components/darkMode"
+import MainBox from "@/components/mainBox"
 
 
 
