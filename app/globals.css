@@ -49,7 +49,7 @@
 }
 
 :root { 
-  --mainbox-strip: grey ;
+  --mainbox-strip: #333 ;
   --mainbox-color: #f4f4eb;
   --stars-color: black;
   --stars-bg: radial-gradient(ellipse at bottom, #d1dbaf 0%, #7485d0 100%);

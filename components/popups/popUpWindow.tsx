@@ -8,6 +8,7 @@ interface windowProps {
   onClose: () => void;
   children?: ReactNode;
   header: string;
+  
 }
 
 export default function PopUpWindow({ children, onClose, isOpen, header }: windowProps) {
@@ -21,7 +22,7 @@ export default function PopUpWindow({ children, onClose, isOpen, header }: windo
         <div ref={nodeRef} style={windowStyle}>
           <div className="window-header" style={headerStyle}>
             <span>{header}</span>
-            <button className="text-3xl" onClick={onClose}>
+            <button className="text-3xl hover:cursor-pointer" onClick={onClose}>
               ✕
             </button>
           </div>
@@ -59,6 +60,7 @@ const headerStyle: React.CSSProperties = {
   padding: "10px",
   margin: "2px",
   cursor: "grab",
+  WebkitTextFillColor: "white",
   borderTopLeftRadius: "12px",
   borderTopRightRadius: "12px",
   borderBottomLeftRadius: "0px",

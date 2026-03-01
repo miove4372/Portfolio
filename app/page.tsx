@@ -7,7 +7,7 @@ import MainBox from "@/components/mainBox"
 
 export default function Home() {
 
-  return (
+return (
     <StarsBackground className="relative h-screen w-full flex items-center justify-center" starColor="var(--stars-color)" background="var(--stars-bg)">
       <Darkmode/>
       <MainBox background="var(--mainbox-color)" stripBackground="var(--mainbox-strip)" />

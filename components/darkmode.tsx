@@ -32,7 +32,7 @@ export default function Darkmode({ className = "" }: { className?: string }) {
   return (
     <button
       onClick={clicked}
-      className={`absolute left-10 top-10 rounded-2xl p-5 ${className}`}
+      className={`absolute left-10 top-10 rounded-2xl p-5 ${className} hover:cursor-pointer`}
       aria-label="Toggle dark mode"
     >
       {theme === "dark" ? "☀️" : "🌙"}
