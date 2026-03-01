@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
 import PopUpWindow from "./popups/PopUpWindow";
+import About from "./popups/About";
 
 
 type MainBoxProps = React.ComponentProps<"div"> & {
@@ -73,10 +74,7 @@ const [mailOpen, setMailOpen] = useState<boolean>(false)
 
                 {aboutOpen &&(
                   <PopUpWindow isOpen={aboutOpen} onClose={() => setAboutOpen(false)} header="About">
-                      <div>
-                        <p>her skriver jeg </p>
-                        <p></p>
-                      </div>
+                      <About></About>
                   </PopUpWindow>
                 )}
                 {linksOpen &&(
