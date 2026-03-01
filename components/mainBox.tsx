@@ -4,6 +4,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
+import PopUpWindow from "./popups/PopUpWindow";
 
 
 type MainBoxProps = React.ComponentProps<"div"> & {
@@ -25,6 +26,9 @@ export default function MainBox({
 
 
 const [aboutOpen, setAboutOpen] = useState<boolean>(false)
+const [workOpen, setWorkOpen] = useState<boolean>(false)
+const [linksOpen, setLinksOpen] = useState<boolean>(false)
+const [mailOpen, setMailOpen] = useState<boolean>(false)
 
 
 
@@ -51,36 +55,55 @@ const [aboutOpen, setAboutOpen] = useState<boolean>(false)
                   <Image src="/info-circle-svgrepo-com (1).svg" width={50} height={50} alt="info" className="hidden dark:block" />
                 </button>
 
-                <button>
+                <button onClick={()=>{setWorkOpen(true)}}>
                   <Image src="/folder-open-svgrepo-com (1).svg" width={50} height={50} alt="folder" className="block dark:hidden" />
                   <Image src="/folder-open-svgrepo-com.svg" width={50} height={50} alt="folder" className="hidden dark:block" />
                 </button>
 
-                <button>
+                <button onClick={()=>{setLinksOpen(true)}}>
                   <Image src="/link-svgrepo-com.svg" width={50} height={50} alt="link" className="block dark:hidden" />
                   <Image src="/link-svgrepo-com (1).svg" width={50} height={50} alt="link" className="hidden dark:block" />
                 </button>
 
-                <button>
+                <button onClick={()=>{setMailOpen(true)}}>
                   <Image src="/mail-svgrepo-com.svg" width={50} height={50} alt="mail" className="block dark:hidden" />
                   <Image src="/mail-svgrepo-com (1).svg" width={50} height={50} alt="mail" className="hidden dark:block" />
                 </button>
 
 
                 {aboutOpen &&(
-                  <button className="text-5xl" onClick={()=>{setAboutOpen(false)}}>
-                  x
-                  </button>
+                  <PopUpWindow isOpen={aboutOpen} onClose={() => setAboutOpen(false)} header="About">
+                      <div>
+                        <p>her skriver jeg </p>
+                        <p></p>
+                      </div>
+                  </PopUpWindow>
+                )}
+                {linksOpen &&(
+                  <PopUpWindow isOpen={linksOpen} onClose={() => setLinksOpen(false)} header="Links">
+                      <div>
+                        <p>her skriver jeg </p>
+                        <p></p>
+                      </div>
+                  </PopUpWindow>
+                )}
+                {workOpen &&(
+                  <PopUpWindow isOpen={workOpen} onClose={() => setWorkOpen(false)} header="Work">
+                      <div>
+                        <p>her skriver jeg </p>
+                        <p></p>
+                      </div>
+                  </PopUpWindow>
+                )}
+                {mailOpen &&(
+                  <PopUpWindow isOpen={mailOpen} onClose={() => setMailOpen(false)} header="Mail">
+                      <div>
+                        <p>her skriver jeg </p>
+                        <p></p>
+                      </div>
+                  </PopUpWindow>
                 )}
               </div>
-
-              
-
-
-
-
-
-
 
               <div className="flex justify-around ml-5 mr-5 text-2xl">
                 <span >About</span>
