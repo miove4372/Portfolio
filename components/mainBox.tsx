@@ -39,7 +39,7 @@ export default function MainBox({
   return (
     <div
       className={cn(
-        "h-[70%] w-4/5 z-10 rounded-2xl flex flex-col overflow-hidden",
+        "h-[80%] w-4/5 z-10 rounded-2xl flex flex-col overflow-hidden",
         className,
       )}
       style={{ background }}

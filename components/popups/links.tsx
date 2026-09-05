@@ -5,7 +5,7 @@ export default function Links() {
     <div className="flex m-2 justify-evenly">
       <div>
         <Image
-          src="/github_logo.svg.webp"
+          src="/GitHub_Invertocat_Black.png"
           width={50}
           height={50}
           alt="mail"
