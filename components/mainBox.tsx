@@ -64,8 +64,8 @@ export default function MainBox({
             className="border-4  rounded-full"
             src={"/Meg2.JPG"}
             alt="Bilde av meg"
-            width={200}
-            height={400}
+            width={300}
+            height={600}
           />
         </div>
       </main>
