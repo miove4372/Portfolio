@@ -9,6 +9,7 @@ import About from "./popups/about";
 import Links from "./popups/links";
 import Work from "./popups/work";
 import Mail from "./popups/mail";
+import Link from "next/link";
 
 
 
@@ -38,17 +39,17 @@ const [mailOpen, setMailOpen] = useState<boolean>(false)
 
   return (
     <div
-      className={cn("h-6/10 w-3/5 z-10  rounded-2xl flex flex-col overflow-scroll", className)} style={{ background }}
-      {...props}>
+      className={cn("h-[60%] w-3/5 z-10 rounded-2xl flex flex-col overflow-hidden", className)} style={{ background }}
+      {...props}> 
         
       <header
         className="h-16 rounded-t-2xl text-2xl border-2  p-2"
         style={{ background: stripBg }}>
-          <p className="text-white">Home</p>
+          <Link className="text-white" href={"/"}>Home</Link>
         </header>
-        <main className="flex flex-col flex-1 items-center m-10">
+        <main className="flex flex-col flex-1 items-center m-10 overflow-y-auto min-h-0">
           <h1 className="text-7xl m-2">Hi! I am Mikael</h1>
-          <p className="text-2xl p-5">1st year student</p>
+          <p className="text-2xl p-5">2nd year student at UiB</p>
         </main>
         <footer className="m-2">
           <div>
@@ -58,10 +59,12 @@ const [mailOpen, setMailOpen] = useState<boolean>(false)
                   <Image src="/info-circle-svgrepo-com (1).svg" width={50} height={50} alt="info" className="hidden dark:block" />
                 </button>
 
+                {
                 <button onClick={()=>{setWorkOpen(true)}} className="hover:cursor-pointer">
                   <Image src="/folder-open-svgrepo-com (1).svg" width={50} height={50} alt="folder" className="block dark:hidden" />
                   <Image src="/folder-open-svgrepo-com.svg" width={50} height={50} alt="folder" className="hidden dark:block" />
                 </button>
+                }
 
                 <button onClick={()=>{setLinksOpen(true)}} className="hover:cursor-pointer">
                   <Image src="/link-svgrepo-com.svg" width={50} height={50} alt="link" className="block dark:hidden" />

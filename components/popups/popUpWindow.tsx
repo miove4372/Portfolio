@@ -17,7 +17,7 @@ export default function PopUpWindow({ children, onClose, isOpen, header }: windo
   if (!isOpen) return null;
 
   return (
-    <div style={overlayStyle}>
+    <div style={overlayStyle} >
       <Draggable nodeRef={nodeRef} handle=".window-header">
         <div ref={nodeRef} style={windowStyle}>
           <div className="window-header" style={headerStyle}>
@@ -27,7 +27,7 @@ export default function PopUpWindow({ children, onClose, isOpen, header }: windo
             </button>
           </div>
 
-          <div style={{ padding: "1rem" }}>
+          <div className="max-h-150 overflow-scroll" style={{ padding: "1rem" }}>
             {children}
           </div>
         </div>
@@ -48,7 +48,7 @@ const windowStyle: React.CSSProperties = {
   background: "var(--mainbox-color)",
   borderRadius: "12px",
   boxShadow: "0 15px 40px rgba(0,0,0,0.2)",
-  position: "absolute",
+    position: "absolute",
   top: "100px",
   left: "100px",
   pointerEvents: "auto",
