@@ -27,7 +27,7 @@ export default function PopUpWindow({ children, onClose, isOpen, header }: windo
             </button>
           </div>
 
-          <div className="max-h-150 overflow-scroll" style={{ padding: "1rem" }}>
+          <div className="max-h-150" style={{ padding: "1rem" }}>
             {children}
           </div>
         </div>

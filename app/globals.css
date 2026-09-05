@@ -88,11 +88,11 @@
 }
 
 .dark {
-  --mainbox-strip: #0c2a36;
-  --mainbox-color: #265e75;
+  --mainbox-strip: #27292a;
+  --mainbox-color: #070707;
   --stars-color: white;
-  --stars-bg: radial-gradient(ellipse at bottom, #49218d 0%, #141017 100%);
-  --background: oklch(0.145 0 0);
+  --stars-bg: radial-gradient(ellipse at bottom, #000000 30%, #000000 100%);
+  --background: oklch(14.958% 0.00002 271.152);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);

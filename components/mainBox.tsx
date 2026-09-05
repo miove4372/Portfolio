@@ -54,7 +54,7 @@ export default function MainBox({
         </Link>
       </header>
 
-      <main className="flex flex-1 items-center justify-center m-10 overflow-y-auto min-h-0">
+      <main className="flex flex-1 items-center justify-center m-10 min-h-50">
         <div className="w-full">
           <h1 className="text-7xl m-2">Mikael Øverland</h1>
           <p className="text-2xl m-2">2. års student ved UiB</p>
@@ -179,15 +179,8 @@ export default function MainBox({
                 <Links />
               </PopUpWindow>
             )}
-            {workOpen && (
-              <PopUpWindow
-                isOpen={workOpen}
-                onClose={() => setWorkOpen(false)}
-                header="Work"
-              >
-                <Work />
-              </PopUpWindow>
-            )}
+            
+
             {mailOpen && (
               <PopUpWindow
                 isOpen={mailOpen}

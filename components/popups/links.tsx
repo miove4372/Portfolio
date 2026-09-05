@@ -5,12 +5,19 @@ export default function Links() {
     <div className="flex m-2 justify-evenly">
       <div>
         <Image
+          src="/GitHub_Invertocat_White.png"
+          width={50}
+          height={50}
+          alt="Black cat"
+          className="hidden dark:block"
+        />
+        <Image
           src="/GitHub_Invertocat_Black.png"
           width={50}
           height={50}
-          alt="mail"
+          alt="Black cat"
+          className="block dark:hidden"
         />
-
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -21,12 +28,7 @@ export default function Links() {
         </a>
       </div>
       <div>
-        <Image
-          src="/facebook.svg.webp"
-          width={50}
-          height={50}
-          alt="mail"
-        />
+        <Image src="/facebook.svg.webp" width={50} height={50} alt="mail" />
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -37,12 +39,7 @@ export default function Links() {
         </a>
       </div>
       <div>
-        <Image
-          src="/LinkedIn.svg.webp"
-          width={50}
-          height={50}
-          alt="mail"
-        />
+        <Image src="/LinkedIn.svg.webp" width={50} height={50} alt="mail" />
         <a
           target="_blank"
           rel="noopener noreferrer"
