@@ -62,7 +62,7 @@ export default function MainBox({
         <div className="w-full flex items-center justify-center">
           <Image
             className="border-4  rounded-full"
-            src={"/meg2.JPG"}
+            src={"/Meg2.JPG"}
             alt="Bilde av meg"
             width={200}
             height={400}

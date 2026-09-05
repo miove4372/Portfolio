@@ -38,7 +38,7 @@ export default function Links() {
       </div>
       <div>
         <Image
-          src="/Linkedin.svg.webp"
+          src="/LinkedIn.svg.webp"
           width={50}
           height={50}
           alt="mail"
