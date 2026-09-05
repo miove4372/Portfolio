@@ -1,15 +1,10 @@
-import Image from "next/image";
 
-
-export default function Work(){
+export default function Work1(){
 
 
     return(
         <div className="">
-            <Image src={"/tetrisimg.png"} alt="Image of tetris game" width={200} height={100}></Image>
-            <Image src={"/tetrisimg.png"} alt="Image of tetris game" width={200} height={100}></Image>
-            <Image src={"/tetrisimg.png"} alt="Image of tetris game" width={200} height={100}></Image>
-            
+            <h1 className="text-4xl">Spill</h1>
         </div>
     )
 }

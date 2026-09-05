@@ -48,9 +48,9 @@ const windowStyle: React.CSSProperties = {
   background: "var(--mainbox-color)",
   borderRadius: "12px",
   boxShadow: "0 15px 40px rgba(0,0,0,0.2)",
-    position: "absolute",
-  top: "100px",
-  left: "100px",
+  position: "absolute",
+  top: "25%",
+  left: "25%",
   pointerEvents: "auto",
 };
 
