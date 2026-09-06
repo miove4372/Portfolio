@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Links() {
   return (
-    <div className="flex m-2 justify-evenly">
+    <div className="flex m-2 justify-evenly text-2xl">
       <div>
         <Image
           src="/GitHub_Invertocat_White.png"

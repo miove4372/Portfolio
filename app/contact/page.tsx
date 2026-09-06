@@ -1,13 +1,13 @@
 "use client";
 
 import Header from "@/components/header";
-import HomeBody from "@/components/homeBody";
+import ContactBody from "./components/contactBody";
 
-export default function Home() {
+export default function Contact() {
   return (
     <div>
       <Header />
-      <HomeBody />
+      <ContactBody />
     </div>
   );
 }
