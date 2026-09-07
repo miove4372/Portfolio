@@ -32,7 +32,7 @@ export default function HomeBody() {
 
         <div className="w-full flex items-center justify-center">
           <Image
-            className="border-4 border-(--accent rounded-full z-10 shadow-lg"
+            className="border-4 border-accent rounded-full z-10 shadow-lg"
             src="/Meg2.JPG"
             alt="Bilde av meg"
             width={300}

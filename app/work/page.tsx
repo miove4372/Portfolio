@@ -1,6 +1,5 @@
 "use client"
 
-import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars"
 import Header from "@/components/header"
 import WorkBody from "./components/workBody"
 
