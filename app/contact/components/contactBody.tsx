@@ -9,9 +9,8 @@ export default function ContactBody() {
       className="min-h-screen"
     >
       <main className="flex justify-center p-10 h-screen items-center z-10 md:flex-row">
-          <ContactCard/>
+        <ContactCard />
       </main>
     </StarsBackground>
-
   );
 }

@@ -49,7 +49,7 @@
 
 :root { 
   --mainbox-strip: #333 ;
-  --mainbox-color: #cecea3;
+  --mainbox-color: #d2d2b8;
   --stars-color: #f4f1de;
   --stars-bg: linear-gradient(135deg, #1a1b3a 0%, #2e2f6b 50%, #4a4e8c 100%);
   --text-primary: #f4f1de;

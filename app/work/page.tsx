@@ -8,7 +8,7 @@ export default function Work() {
 return (
   <div>
       <Header/>
-      <WorkBody></WorkBody>
+      <WorkBody/>
     
 
   </div>
