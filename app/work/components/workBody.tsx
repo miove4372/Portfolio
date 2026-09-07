@@ -16,14 +16,14 @@ export default function WorkBody() {
       description: "Snake kodet i python",
       image: "/Snake.png",
       tags: ["Python"],
-      link: "",
+      link: "https://github.com/miove4372/Snake",
     },
     {
       title: "Tetris",
       description: "Tetris",
       image: "/Tetris.png",
       tags: ["Java", "Swing"],
-      link: "",
+      link: "https://github.com/miove4372/Tetris",
     },
     {
       title: "Minesweeper",
@@ -32,6 +32,7 @@ export default function WorkBody() {
       tags: ["Java", "Swing"],
       link: "",
     },
+    
     
   ];
 

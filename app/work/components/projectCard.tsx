@@ -27,10 +27,10 @@ export default function ProjectCard({
         alt={title}
         className="w-full  object-cover rounded-2xl"
       />
-      <div className="mt-auto">
+      <div className="mt-auto">  
       <p className="mt-4">{description}</p>
       {link && (
-        <Link className="hover:text-blue-600" href={link}>
+        <Link className="hover:text-blue-600" href={link} target="_blank">
           git-repo
         </Link>
       )}

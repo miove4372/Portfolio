@@ -6,7 +6,7 @@ import { StarsBackground } from "./animate-ui/components/backgrounds/stars";
 export default function HomeBody() {
   return (
     <StarsBackground background="var(--stars-bg)" starColor="var(--stars-color)">
-      <main className="flex flex-col md:flex-row items-center justify-center gap-12 m-10 min-h-screen max-w-6xl mx-auto px-6">
+      <main className="flex flex-col md:flex-row items-center justify-center gap-12 m-10 min-h-screen max-w-6xl mx-auto px-6 "  >
         <div className="w-full flex flex-col justify-center z-10 text-center md:text-left">
           <h1 className="text-6xl md:text-7xl font-semibold m-2 text-(--text-primary)">
             Mikael Øverland

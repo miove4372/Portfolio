@@ -22,8 +22,8 @@ type StarLayerProps = HTMLMotionProps<'div'> & {
 function generateStars(count: number, starColor: string) {
   const shadows: string[] = [];
   for (let i = 0; i < count; i++) {
-    const x = Math.floor(Math.random() * 4000) - 2000;
-    const y = Math.floor(Math.random() * 4000) - 2000;
+    const x = Math.floor(Math.random() * 6000) - 1000;
+    const y = Math.floor(Math.random() * 6000) - 1000;
     shadows.push(`${x}px ${y}px ${starColor}`);
   }
   return shadows.join(', ');
@@ -123,14 +123,14 @@ function StarsBackground({
         className={cn({ 'pointer-events-none': !pointerEvents })}
       >
         <StarLayer
-          count={100}
+          count={250}
           size={1}
           transition={{ repeat: Infinity, duration: speed, ease: 'linear' }}
           starColor={starColor}
         />
         <StarLayer
-          count={400}
-          size={4}
+          count={500}
+          size={3}
           transition={{
             repeat: Infinity,
             duration: speed * 2,
@@ -139,7 +139,7 @@ function StarsBackground({
           starColor={starColor}
         />
         <StarLayer
-          count={300}
+          count={600}
           size={5}
           transition={{
             repeat: Infinity,
