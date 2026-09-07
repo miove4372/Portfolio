@@ -30,7 +30,7 @@ export default function WorkBody() {
       description: "Klassisk minesweeper laget i Java",
       image: "/Minesweeper.png",
       tags: ["Java", "Swing"],
-      link: "",
+      link: "https://github.com/miove4372/Minesweeper",
     },
     
     
