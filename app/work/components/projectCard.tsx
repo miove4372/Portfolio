@@ -30,8 +30,8 @@ export default function ProjectCard({
       <div className="mt-auto">  
       <p className="mt-4">{description}</p>
       {link && (
-        <Link className="hover:text-blue-600" href={link} target="_blank">
-          git-repo
+        <Link className="hover:text-blue-600 text-2xl underline" href={link} target="_blank">
+          git repo
         </Link>
       )}
       <ul className="text-sm mt-4 flex flex-wrap gap-2">
