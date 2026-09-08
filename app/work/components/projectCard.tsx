@@ -6,7 +6,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  link: string;
+  link: string[];
   tags: string[];
 }
 
@@ -29,9 +29,14 @@ export default function ProjectCard({
       />
       <div className="mt-auto">  
       <p className="mt-4">{description}</p>
-      {link && (
-        <Link className="hover:text-blue-600 text-2xl underline" href={link} target="_blank">
+      {link[0] && (
+        <Link className="hover:text-blue-600 mr-10 text-2xl underline" href={link[0]} target="_blank">
           git repo
+        </Link>
+      )}
+      {link[1] && (
+        <Link className="hover:text-blue-600 text-2xl underline" href={link[1]} target="_blank">
+          Besøk siden her
         </Link>
       )}
       <ul className="text-sm mt-4 flex flex-wrap gap-2">
