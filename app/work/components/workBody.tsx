@@ -8,7 +8,14 @@ export default function WorkBody() {
       title: "Portfolio",
       description: "Min personlige nettside",
       image: "/Portfølje.png",
-      tags: ["React", "Node.js", "HTML/CSS", "TypeScript"],
+      tags: ["React", "Next.js", "HTML/CSS", "TypeScript", "Vercel"],
+      link: "https://github.com/miove4372/Portfolio",
+    },
+    {
+      title: "Mattilbud app",
+      description: "Bruker search ai til å finne de beste ukestilbudene for hver uke og kommer med forslag til oppskrifter.",
+      image: "/MattilbudApp.png",
+      tags: ["React", "Next.js", "HTML/CSS", "TypeScript", "Redis", "Cron", "Vercel", "Perplexity"],
       link: "https://github.com/miove4372/Portfolio",
     },
     {
