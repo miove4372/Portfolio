@@ -16,7 +16,7 @@ export default function WorkBody() {
       description: "Bruker search ai til å finne de beste ukestilbudene for hver uke og kommer med forslag til oppskrifter.",
       image: "/MattilbudApp.png",
       tags: ["React", "Next.js", "HTML/CSS", "TypeScript", "Redis", "Cron", "Vercel", "Perplexity"],
-      link: ["https://github.com/miove4372/studentkalender-mattilbud", "https://studentkalender-mattilbud-cec3jxbs5-mikaels-projects-6ed4539b.vercel.app/"],
+      link: ["https://github.com/miove4372/studentkalender-mattilbud", "https://studentkalender-mattilbud.vercel.app/"],
     },
     {
       title: "Databasesystem ",
